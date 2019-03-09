@@ -1,0 +1,9 @@
+-- ****** Object: RelationalTable SHOP.ORDERS Script Date: 09.03.2019 19:10:18 ******
+
+CREATE TABLE "SHOP"."ORDERS" 
+(
+    "ID" NUMBER(10,0) NOT NULL ENABLE,
+    "ITEM" VARCHAR2(200),
+    "PRICE" NUMBER(*,0),
+    CONSTRAINT "PK_ORDERS" PRIMARY KEY ("ID") ENABLE
+);

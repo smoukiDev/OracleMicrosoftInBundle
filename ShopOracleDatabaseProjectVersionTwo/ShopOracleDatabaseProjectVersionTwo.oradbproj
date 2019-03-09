@@ -13,6 +13,11 @@
     <AssemblyName>ShopOracleDatabaseProjectVersionTwo</AssemblyName>
     <Name>ShopOracleDatabaseProjectVersionTwo</Name>
     <RootNamespace>ShopOracleDatabaseProjectVersionTwo</RootNamespace>
+    <ImportedSchemas>
+      <ImportedSchema xmlns="">
+        <Name>SHOP</Name>
+      </ImportedSchema>
+    </ImportedSchemas>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Functions\" />
@@ -55,5 +60,16 @@
     <DBRef Include="Database References\SHOP.MDPDB\">
       <ConnectionString>DATA SOURCE=localhost:1521/MDPDB;USER ID=SHOP</ConnectionString>
     </DBRef>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Indexes\SHOP.ORDERS.Index.PK_ORDERS.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Tables\Relational Tables\SHOP.CUSTOMERS.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Tables\Relational Tables\SHOP.ORDERS.sql">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
 </Project>
