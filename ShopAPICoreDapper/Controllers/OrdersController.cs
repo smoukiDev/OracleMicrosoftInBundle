@@ -31,5 +31,13 @@ namespace ShopAPICoreDapper.Controllers
 
             return this.Ok(result);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] Order order)
+        {
+            // FIXME: Hardcoded Id (controller & repository)
+            var result = await this.repository.AddAsync(order);
+            return this.Created(this.Request.Path.Value, result);
+        }
     }
 }
