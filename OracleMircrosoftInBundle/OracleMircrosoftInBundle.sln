@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{218574D1-FF94-4B95-8577-A6D58C11C315}") = "ShopOracleDatabaseProjectVersionTwo", "ShopOracleDatabaseProjectVersionTwo\ShopOracleDatabaseProjectVersionTwo.oradbproj", "{AB870CDC-B0F6-4246-85EC-F7A9AD116C6E}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2F454F7-FFD6-4AF5-AC45-B019B58ACCC8}
+	EndGlobalSection
+EndGlobal
