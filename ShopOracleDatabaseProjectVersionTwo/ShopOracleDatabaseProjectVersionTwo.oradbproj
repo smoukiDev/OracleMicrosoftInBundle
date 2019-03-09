@@ -52,8 +52,5 @@
     <DBRefs Include="Database References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tables\Relational Tables\Сustomers.sql">
-      <SubType>Content</SubType>
-    </Content>
   </ItemGroup>
 </Project>
