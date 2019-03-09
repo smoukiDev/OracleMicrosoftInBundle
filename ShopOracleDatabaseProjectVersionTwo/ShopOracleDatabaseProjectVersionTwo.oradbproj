@@ -52,5 +52,8 @@
     <DBRefs Include="Database References\" />
   </ItemGroup>
   <ItemGroup>
+    <DBRef Include="Database References\SHOP.MDPDB\">
+      <ConnectionString>DATA SOURCE=localhost:1521/MDPDB;USER ID=SHOP</ConnectionString>
+    </DBRef>
   </ItemGroup>
 </Project>
