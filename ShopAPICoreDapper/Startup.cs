@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using ShopAPICoreDapper.Core;
+using ShopAPICoreDapper.Models;
+using ShopAPICoreDapper.Persistance;
 
 namespace ShopAPICoreDapper
 {
@@ -25,6 +28,9 @@ namespace ShopAPICoreDapper
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string shopSchema = this.Configuration.GetConnectionString("ShopSchema");
+            services.AddScoped<IOracleDbConnection, OracleDbConnection>( _ => new OracleDbConnection(shopSchema));
+            services.AddScoped<IRepository<Order>, OrderRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
