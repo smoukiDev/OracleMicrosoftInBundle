@@ -24,9 +24,7 @@ namespace ShopAPICoreDapper.Persistance
                           + $"VALUES({item.Id}, '{item.Item}', {item.Price})";
                 connection.Open();
                 await connection.ExecuteAsync(query);
-                query = $"SELECT * FROM Orders WHERE ID={item.Id}";
-                var result = await connection.QueryAsync<Order>(query);
-                return result.FirstOrDefault();
+                return await this.GetByIdAsync(item.Id);
             }
         }
 
@@ -38,6 +36,16 @@ namespace ShopAPICoreDapper.Persistance
                 connection.Open();
                 var result = await connection.QueryAsync<Order>(query);
                 return result.ToList();
+            }
+        }
+
+        public async Task<Order> GetByIdAsync(int id)
+        {
+            using (var connection = this.oracleConnection.GetConnection())
+            {
+                var query = $"SELECT * FROM Orders WHERE ID={id}";
+                var result = await connection.QueryAsync<Order>(query);
+                return result.FirstOrDefault();
             }
         }
     }

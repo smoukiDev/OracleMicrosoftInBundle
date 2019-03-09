@@ -33,11 +33,24 @@ namespace ShopAPICoreDapper.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Order order)
+        public async Task<IActionResult> CreateAsync([FromBody] Order order)
         {
             // FIXME: Hardcoded Id (controller & repository)
             var result = await this.repository.AddAsync(order);
             return this.Created(this.Request.Path.Value, result);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdAsync(int id)
+        {
+            var result = await this.repository.GetByIdAsync(id);
+            if (result == null)
+            {
+                this.NotFound();
+            }
+
+            return this.Ok(result);
+
         }
     }
 }
