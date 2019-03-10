@@ -1,4 +1,4 @@
-﻿namespace ShopAPIEntityFrameworkSix.Models
+﻿namespace ShopOracleEFDataAccess.Models
 {
     using System;
     using System.Collections.Generic;

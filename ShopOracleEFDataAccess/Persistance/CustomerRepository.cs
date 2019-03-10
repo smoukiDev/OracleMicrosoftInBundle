@@ -1,5 +1,5 @@
-﻿using ShopAPIEntityFrameworkSix.Core;
-using ShopAPIEntityFrameworkSix.Models;
+﻿using ShopOracleEFDataAccess.Core;
+using ShopOracleEFDataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace ShopAPIEntityFrameworkSix.Persistance
+namespace ShopOracleEFDataAccess.Persistance
 {
     public class CustomersRepository : IRepository<CUSTOMER>
     {

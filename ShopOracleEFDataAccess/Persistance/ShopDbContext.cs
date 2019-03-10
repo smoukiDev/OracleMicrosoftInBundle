@@ -1,10 +1,10 @@
-﻿namespace ShopAPIEntityFrameworkSix.Persistance
+﻿namespace ShopOracleEFDataAccess.Persistance
 {
     using System;
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
-    using ShopAPIEntityFrameworkSix.Models;
+    using ShopOracleEFDataAccess.Models;
 
     public partial class ShopDbContext : DbContext
     {
