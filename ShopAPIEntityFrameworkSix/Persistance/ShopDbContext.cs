@@ -9,7 +9,7 @@ namespace ShopAPIEntityFrameworkSix.Persistance
     public partial class ShopDbContext : DbContext
     {
         public ShopDbContext()
-            : base("name=ShopDbContext")
+            : base("name=ShopSchema")
         {
         }
 
