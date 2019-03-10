@@ -1,13 +1,13 @@
-﻿using ShopAPIEntityFrameworkSix.Core;
-using ShopAPIEntityFrameworkSix.Models;
-using ShopAPIEntityFrameworkSix.Persistance;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using ShopOracleEFDataAccess.Core;
+using ShopOracleEFDataAccess.Models;
+using ShopOracleEFDataAccess.Persistance;
 
 namespace ShopAPIEntityFrameworkSix.Controllers
 {
@@ -17,7 +17,8 @@ namespace ShopAPIEntityFrameworkSix.Controllers
 
         public CustomersController()
         {
-            this.repository = new CustomersRepository();
+            string connectionString = "User Id=SHOP;Password=Shopping19;Data Source=localhost:1521/MDPDB";
+            this.repository = new CustomersRepository(connectionString);
         }
 
         // GET api/<controller>
