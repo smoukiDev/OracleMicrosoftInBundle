@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{218574D1-FF94-4B95-8577-A6D58C11C315}") = "ShopOracleDatabaseProjectVersionTwo", "ShopOracleDatabaseProjectVersionTwo\ShopOracleDatabaseProjectVersionTwo.oradbproj", "{AB870CDC-B0F6-4246-85EC-F7A9AD116C6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopAPICoreDapper", "ShopAPICoreDapper\ShopAPICoreDapper.csproj", "{E15B5E0D-98AE-4AD3-8CD3-F78A97D63E66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopAPICoreDapper", "ShopAPICoreDapper\ShopAPICoreDapper.csproj", "{E15B5E0D-98AE-4AD3-8CD3-F78A97D63E66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopAPIEntityFrameworkSix", "ShopAPIEntityFrameworkSix\ShopAPIEntityFrameworkSix.csproj", "{99E3F101-B77F-407C-8A93-F8F5AD3CFCD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{E15B5E0D-98AE-4AD3-8CD3-F78A97D63E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E15B5E0D-98AE-4AD3-8CD3-F78A97D63E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E15B5E0D-98AE-4AD3-8CD3-F78A97D63E66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E3F101-B77F-407C-8A93-F8F5AD3CFCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E3F101-B77F-407C-8A93-F8F5AD3CFCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E3F101-B77F-407C-8A93-F8F5AD3CFCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E3F101-B77F-407C-8A93-F8F5AD3CFCD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
