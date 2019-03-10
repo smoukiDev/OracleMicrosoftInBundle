@@ -17,8 +17,7 @@ namespace ShopAPIEntityFrameworkSix.Controllers
 
         public CustomersController()
         {
-            string connectionString = "User Id=SHOP;Password=Shopping19;Data Source=localhost:1521/MDPDB";
-            this.repository = new CustomersRepository(connectionString);
+            this.repository = new CustomersRepository("name=ShopSchema");
         }
 
         // GET api/<controller>
