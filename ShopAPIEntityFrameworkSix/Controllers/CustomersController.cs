@@ -13,7 +13,7 @@ namespace ShopAPIEntityFrameworkSix.Controllers
 {
     public class CustomersController : ApiController
     {
-        private readonly IRepository<CUSTOMER> repository;
+        private readonly IRepository<Customer> repository;
 
         public CustomersController()
         {

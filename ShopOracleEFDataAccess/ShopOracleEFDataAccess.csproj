@@ -49,8 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\IRepository.cs" />
-    <Compile Include="Models\CUSTOMER.cs" />
-    <Compile Include="Models\ORDER.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Persistance\CustomerRepository.cs" />
     <Compile Include="Persistance\ShopDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

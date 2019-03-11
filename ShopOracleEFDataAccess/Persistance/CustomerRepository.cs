@@ -9,7 +9,7 @@ using System.Web;
 
 namespace ShopOracleEFDataAccess.Persistance
 {
-    public class CustomersRepository : IRepository<CUSTOMER>
+    public class CustomersRepository : IRepository<Customer>
     {
         private readonly ShopDbContext context;
 
@@ -18,9 +18,9 @@ namespace ShopOracleEFDataAccess.Persistance
             this.context = new ShopDbContext(connectionString);
         }
 
-        public async Task<IEnumerable<CUSTOMER>> GetAllAsync()
+        public async Task<IEnumerable<Customer>> GetAllAsync()
         {
-            var result = this.context.CUSTOMERS.AsNoTracking();
+            var result = this.context.Customers.AsNoTracking();
             return await result.ToListAsync();
         }
     }
