@@ -35,6 +35,10 @@ namespace ShopAPIEntityFrameworkSix
                 .JsonFormatter
                 .SerializerSettings
                 .Formatting = Formatting.Indented;
+
+            // Dependency injection setting
+            var container = new UnityConfiguration().ConfigurateContainer();
+            config.DependencyResolver = new UnityResolver(container);
         }
     }
 }

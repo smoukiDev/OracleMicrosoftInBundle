@@ -13,9 +13,9 @@ namespace ShopOracleEFDataAccess.Persistance
     {
         private readonly ShopDbContext context;
 
-        public CustomersRepository(string connectionString)
+        public CustomersRepository(ShopDbContext context)
         {
-            this.context = new ShopDbContext(connectionString);
+            this.context = context;
         }
 
         public async Task<IEnumerable<Customer>> GetAllAsync()

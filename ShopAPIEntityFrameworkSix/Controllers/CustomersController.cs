@@ -15,9 +15,9 @@ namespace ShopAPIEntityFrameworkSix.Controllers
     {
         private readonly IRepository<Customer> repository;
 
-        public CustomersController()
+        public CustomersController(IRepository<Customer> repository)
         {
-            this.repository = new CustomersRepository("name=ShopSchema");
+            this.repository = repository;
         }
 
         // GET api/<controller>

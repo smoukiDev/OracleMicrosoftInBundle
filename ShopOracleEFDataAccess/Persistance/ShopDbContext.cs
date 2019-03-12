@@ -8,8 +8,8 @@
 
     public class ShopDbContext : DbContext
     {
-        public ShopDbContext(string connectionString)
-            : base(connectionString)
+        public ShopDbContext(string connectionName)
+            : base(connectionName)
         {
         }
 
