@@ -1,4 +1,4 @@
-namespace ShopAPIEntityFrameworkSix.Models
+﻿namespace ShopOracleEFDataAccess.Models
 {
     using System;
     using System.Collections.Generic;
@@ -7,14 +7,14 @@ namespace ShopAPIEntityFrameworkSix.Models
     using System.Data.Entity.Spatial;
 
     [Table("SHOP.ORDERS")]
-    public partial class ORDER
+    public partial class Order
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [StringLength(200)]
-        public string ITEM { get; set; }
+        public string Item { get; set; }
 
-        public decimal? PRICE { get; set; }
+        public decimal? Price { get; set; }
     }
 }

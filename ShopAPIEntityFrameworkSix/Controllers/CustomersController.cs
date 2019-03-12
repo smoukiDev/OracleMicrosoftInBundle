@@ -1,23 +1,23 @@
-﻿using ShopAPIEntityFrameworkSix.Core;
-using ShopAPIEntityFrameworkSix.Models;
-using ShopAPIEntityFrameworkSix.Persistance;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using ShopOracleEFDataAccess.Core;
+using ShopOracleEFDataAccess.Models;
+using ShopOracleEFDataAccess.Persistance;
 
 namespace ShopAPIEntityFrameworkSix.Controllers
 {
     public class CustomersController : ApiController
     {
-        private readonly IRepository<CUSTOMER> repository;
+        private readonly IRepository<Customer> repository;
 
         public CustomersController()
         {
-            this.repository = new CustomersRepository();
+            this.repository = new CustomersRepository("name=ShopSchema");
         }
 
         // GET api/<controller>

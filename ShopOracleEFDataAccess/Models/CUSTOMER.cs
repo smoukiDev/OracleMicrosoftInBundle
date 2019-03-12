@@ -1,4 +1,4 @@
-namespace ShopAPIEntityFrameworkSix.Models
+﻿namespace ShopOracleEFDataAccess.Models
 {
     using System;
     using System.Collections.Generic;
@@ -7,15 +7,15 @@ namespace ShopAPIEntityFrameworkSix.Models
     using System.Data.Entity.Spatial;
 
     [Table("SHOP.CUSTOMERS")]
-    public partial class CUSTOMER
+    public partial class Customer
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [StringLength(255)]
-        public string FIRSTNAME { get; set; }
+        public string FirstName { get; set; }
 
         [StringLength(255)]
-        public string LASTNAME { get; set; }
+        public string LastName { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopAPIEntityFrameworkSix.Core
+namespace ShopOracleEFDataAccess.Core
 {
     public interface IRepository<T>
     {
