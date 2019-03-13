@@ -13,6 +13,7 @@ namespace ShopAPIEntityFrameworkSix
     {
         protected void Application_Start()
         {
+            AutofacConfig.SetDependencyInjection();
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
